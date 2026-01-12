@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      @import url("style.css");
+      @import url("sample.sass");
+    </style>
+  </head>
+  <div id="output">
+    <h1>Saya adi</h1>
+    <h2>Saya adi2</h2>
+    <img src="img.png" alt="vite" height="100" width="auto" />
+  </div>
+  <body>
+    <script type="module">
+      import { sayHello } from "./say-hello.js";
+      import { sayGoodbye } from "./say-goodbye.js";
+      import { v4 } from "uuid";
+      import * as person from "./person.json";
+      import textFile from "./hello.txt?raw";
+      sayHello("Ainul");
+      sayGoodbye("Fuady");
+      console.info("UUID:", v4());
+      for (let key in person) {
+        console.info(`${key}: ${person[key]}`);
+      }
+      console.info(textFile);
+    </script>
+  </body>
+</html>

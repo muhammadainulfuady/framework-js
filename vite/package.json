@@ -1,0 +1,21 @@
+{
+  "name": "vite",
+  "version": "1.0.0",
+  "description": "Belajar Vite",
+  "license": "ISC",
+  "author": "Muhammad Ainul Fuady",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "sass": "^1.97.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vue": "^3.5.26"
+  },
+  "dependencies": {
+    "uuid": "^13.0.0"
+  }
+}
